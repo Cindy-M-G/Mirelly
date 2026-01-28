@@ -19,7 +19,7 @@ const About: React.FC = () => {
     <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-2xl border-[6px] border-white p-0 bg-white transition-all duration-500 group-hover:scale-105 ring-2 ring-wine-100/50">
             <div className="w-full h-full rounded-full overflow-hidden bg-wine-900 flex items-center justify-center">
               <img 
-                src="/curriculum.png" 
+                src="/perfil.png" 
                 alt="Cindy Gutierrez"
                 className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                 style={{ objectPosition: 'center 10%' }}
