@@ -16,28 +16,30 @@ const About: React.FC = () => {
           {/* Main Photo Container */}
          <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-2xl border-[6px] border-white p-0 bg-white transition-all duration-500 group-hover:scale-105 ring-2 ring-wine-100/50">
   <div className="w-full h-full rounded-full overflow-hidden bg-wine-900 flex items-center justify-center">
-    <img 
-      src="/curriculum.png" // Quitamos el punto inicial para GitHub
-      alt="Cindy Gutierrez"
-      className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
-      style={{ objectPosition: 'center 10%' }}
-      onError={(e) => {
-        // Fallback: si no encuentra la imagen, pone el círculo con iniciales
-        e.currentTarget.src = "https://ui-avatars.com/api/?name=Cindy+Gutierrez&background=4a0816&color=fff&size=512";
-      }}
-    />
-    {/* Overlay que aparece al pasar el mouse */}
-    <div className="absolute inset-0 bg-gradient-to-t from-wine-950/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">
-      <span className="text-white font-bold tracking-widest text-[10px] uppercase">Cindy G.</span>
-    </div>
-  </div>
-</div>
+    <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-2xl border-[6px] border-white p-0 bg-white transition-all duration-500 group-hover:scale-105 ring-2 ring-wine-100/50">
+            <div className="w-full h-full rounded-full overflow-hidden bg-wine-900 flex items-center justify-center">
+              <img 
+                src="/curriculum.png" 
+                alt="Cindy Gutierrez"
+                className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                style={{ objectPosition: 'center 10%' }}
+                onError={(e) => {
+                  // Si no encuentra curriculum.png, pone el círculo vino con tus iniciales
+                  e.currentTarget.src = "https://ui-avatars.com/api/?name=Cindy+Gutierrez&background=4a0816&color=fff&size=512";
+                }}
+              />
+              {/* Overlay que aparece al pasar el mouse */}
+              <div className="absolute inset-0 bg-gradient-to-t from-wine-950/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">
+                <span className="text-white font-bold tracking-widest text-[10px] uppercase">Cindy G.</span>
+              </div>
+            </div>
+          </div>
+
           {/* Experience Badge */}
           <div className="absolute -bottom-1 -right-1 bg-wine-800 text-white w-12 h-12 rounded-full border-2 border-white shadow-lg flex flex-col items-center justify-center transform rotate-12 group-hover:rotate-0 transition-transform duration-500">
              <span className="text-[8px] font-bold leading-none uppercase tracking-tighter">Est.</span>
              <span className="text-xs font-black">2024</span>
           </div>
-        </div>
 
         {/* Content Column */}
         <div className="flex-1 space-y-8 text-center md:text-left">
