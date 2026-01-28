@@ -1,4 +1,4 @@
-
+  
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -30,17 +30,18 @@ const Hero: React.FC = () => {
           Estudiante curiosa por la tecnología y el desarrollo de soluciones digitales. Disfruto aprender, programar y crear proyectos que combinen <span className="text-white font-medium italic underline decoration-wine-500 underline-offset-8">lógica, creatividad y funcionalidad.</span>
         </p>
 
-        <a
-            href="/cv.pdf"
-            download="Cindy_Gutierrez_CV.pdf"
-            className="group relative px-10 py-5 bg-white text-wine-950 font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-[0_20px_50px_rgba(45,6,14,0.3)] flex items-center gap-3 overflow-hidden"
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+          <a
+        href="/cv.pdf"
+        download="Cindy_Gutierrez_CV.pdf"
+        className="group relative px-10 py-5 bg-white text-wine-950 font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-[0_20px_50px_rgba(45,6,14,0.3)] flex items-center gap-3 overflow-hidden"
           >
-            <span className="relative z-10">Descargar CV</span>
-            <svg className="w-5 h-5 relative z-10 group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            <div className="absolute inset-0 bg-wine-50 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
-        </a>
+        <span className="relative z-10">Descargar CV</span>
+        <svg className="w-5 h-5 relative z-10 group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        <div className="absolute inset-0 bg-wine-50 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+      </a>
         
           <a
             href="https://www.linkedin.com/in/mirelly-guti%C3%A9rrez-0486a5318"
